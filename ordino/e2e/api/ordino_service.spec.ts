@@ -24,4 +24,23 @@ test.describe.serial('Ordino Service API Tests', () => {
     test('5. Delete item (DELETE)', async () => {
         await ordinoService.delete_item();
     })
+
+    test('e1. Create new item (POST)' ,async () => {       
+        await ordinoService.get_all_itemsError();
+    })
+
+    test('e2. Create new item (POST)' ,async () => {       
+        await ordinoService.get_all_itemsError();
+    })
+
+    test('e3. Create new item (POST)' ,async () => {       
+        await ordinoService.get_all_itemsError();
+    })
+
+    test('e4. Create new item (POST)' ,async () => {       
+        await ordinoService.get_all_itemsError();
+    })
+
+
+     
 });

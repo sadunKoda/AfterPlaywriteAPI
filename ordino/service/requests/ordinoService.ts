@@ -58,6 +58,18 @@ export class OrdinoService {
         return responseBody;
     }
 
+    async get_all_itemsError() {
+        http.setUrl(`items`);
+        const response = await http.requestGet();
+        
+        // Validate response status
+        expect(response.status()).toBe(100);
+        
+        const responseBody = await response.json();
+        
+        return responseBody;
+    }
+
     async get_item_by_Id() {
         http.setUrl(`items/${http.getValue("itemId")}`);
         const response = await http.requestGet();
